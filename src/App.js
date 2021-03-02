@@ -22,6 +22,7 @@ const App = () => {
   const handlePassword = (e) => {
     setPassword(e.target.value);
     if (
+    
       e.target.value === null ||
       e.target.value.match(/^ +$/) ||
       e.target.value === ""
