@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import logo from "./files/logo.png";
 
-const App = () => {
-  
+const App = () => {  
   let [email, setEmail] = useState();
   let [password, setPassword] = useState();
   let [emailValidity, setEmailValidity] = useState();
@@ -12,7 +11,7 @@ const App = () => {
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
-    let regEx =  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    let regEx = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (e.target.value.match(regEx)) {
       setEmailValidity(true);
     } else {
