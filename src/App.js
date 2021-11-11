@@ -10,6 +10,7 @@ const App = () => {
   let [error, setError] = useState();
 
   const handleEmail = (e) => {
+    
     setEmail(e.target.value);
     let regEx= /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (e.target.value.match(regEx)) {
